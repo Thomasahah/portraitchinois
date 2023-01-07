@@ -1,0 +1,518 @@
+body{ /*Corps*/
+  font-family: 'Russo One', sans-serif; /*Police et serif*/
+  background-image:url(images/espace.jpg); /*Image de fond*/
+  background-size:cover; /*Image de fond couvre toute la page*/
+}
+
+/*-----Images en général-----*/
+
+.portraitchinois{ /*Image portrait chinois jaune*/
+  position:absolute; /*Placé en absolu*/
+  max-width:120%; /*Largeur max des icônes*/
+  max-height:120%; /*Longueur max des icônes*/
+  top:-50px; /*Espace avec le bord haut de la page*/
+  left:200px; /*Espace avec le bord gauche de la page*/
+}
+.fleche{
+  position:absolute;
+  max-width:20%; /*Largeur max des icônes*/
+  max-height:20%; /*Longueur max des icônes*/
+  top:550px;
+  left:700px;
+  cursor:pointer;
+  transition:0.5s; /*Durée du grossissement*/
+}
+.fleche:hover{
+  transform: scale(0.9); /*Taille du grossissement*/
+  transition:0.5s; /*Durée du grossissement*/
+}
+.icône{ /*Tous les icônes*/
+  position: absolute; /*Placé en absolu*/
+  max-width:25%; /*Largeur max des icônes*/
+  max-height:25%; /*Longueur max des icônes*/
+  cursor:pointer; /*Pointer lors du survol*/
+}
+
+/*-----Icônes-----*/
+
+.boximg{ /*Box qui regroupe les 7 icônes*/
+  position:absolute; /*Placé en absolu*/
+  top:720px; /*Espace avec le bord haut de la page*/
+  left:0px; /*Espace avec le bord gauche de la page*/
+  width:100%; /*Largeur de la box*/
+  height:700px; /*Longueur de la box*/
+}
+.icône:hover{ /*Transformation au survol des icônes*/
+  transform: scale(1.15); /*Taille du grossissement*/
+  transition:0.8s; /*Durée du grossissement*/
+}
+.marron{ /*Icône marron*/
+  top:100px; /*Espace avec le bord haut de la box*/
+  left:80px; /*Espace avec le bord gauche de la box*/
+  transition:0.8s; /*Durée du retrecissement*/
+}
+.vert{ /*Icône vert*/
+  top:250px; /*Espace avec le bord haut de la box*/
+  left:240px; /*Espace avec le bord gauche de la box*/
+  transition:0.8s; /*Durée du retrecissement*/
+}
+.jaune{ /*Icône jaune*/
+  top:350px; /*Espace avec le bord haut de la box*/
+  left:440px; /*Espace avec le bord gauche de la box*/
+  transition:0.8s; /*Durée du retrecissement*/
+}
+.violet{ /*Icône violet*/
+  top:400px; /*Espace avec le bord haut de la box*/
+  left:675px; /*Espace avec le bord gauche de la box*/
+  transition:0.8s; /*Durée du retrecissement*/
+}
+.rouge{ /*Icône rouge*/
+  top:350px; /*Espace avec le bord haut de la box*/
+  right:440px; /*Espace avec le bord droit de la box*/
+  transition:0.8s; /*Durée du retrecissement*/
+}
+.orange{ /*Icône orange*/
+  top:250px; /*Espace avec le bord haut de la box*/
+  right:240px; /*Espace avec le bord droit de la box*/
+  transition:0.8s; /*Durée du retrecissement*/
+}
+.bleu{ /*Icône bleu*/
+  top:100px; /*Espace avec le bord haut de la box*/
+  right:80px; /*Espace avec le bord droit de la box*/
+  transition:0.8s; /*Durée du retrecissement*/
+}
+
+/*-----Fenêtres modales-----*/
+
+.backwindow{ /*Arrière de la fenêtre modale*/
+  position:fixed; /*Position fixe*/
+  width:100%; /*Largeur*/
+  height:100%; /*Longueur*/
+  background:rgba(0, 0, 0, 0.815); /*Couleur de fond*/
+  top:0px; /*Espace avec le bord haut de la page*/
+  left:0px; /*Espace avec le bord gauche de la page*/
+  transition:opacity 1s; /*Durée de la transition d'opacité*/
+  pointer-events:none; /*Faire apparaitre backwindow lors du clic*/
+  opacity:0; /*Opacité des fenêtres modales*/
+}
+.windowmarron{ /*Fenêtre modale*/
+  width:1000px; /*Largeur de la fenêtre*/
+  height:550px; /*Longueur de la fenêtre*/
+  position:absolute; /*Position au milieu*/
+  margin-top:50px; /*Espace avec le bord haut du backwindow*/
+  margin-left:50px; /*Espace avec le bord gauche du backwindow*/
+  padding:30px; /*Rembourrage de l'interieur de la fenêtre*/
+  border-radius:30px; /*Coins*/
+  background:rgb(83, 59, 59); /*Couleur du fond*/
+  background-image:url(fond/full-trois-lames.png); /*Image de fond*/
+  background-size:800px; /*Taille de l'image de fond*/
+  background-repeat:no-repeat; /*Le fond ne se répète pas*/
+  background-position:420px 20px; /*Position de l'image de fond*/
+}
+.windowvert{ /*Fenêtre modale*/
+  width:1000px; /*Largeur de la fenêtre */
+  height:550px; /*Longueur de la fenêtre*/
+  position:absolute; /*Position au milieu*/
+  margin-top:50px; /*Espace avec le bord haut du backwindow*/
+  margin-left:405px; /*Espace avec le bord gauche du backwindow*/
+  padding:30px; /*Rembourrage de l'interieur de la fenêtre*/
+  border-radius:30px; /*Coins*/
+  background:rgb(57, 168, 94); /*Couleur du fond*/
+  background-image:url(fond/full-naboo.png); /*Image de fond*/
+  background-size:720px; /*Taille de l'image de fond*/
+  background-repeat:no-repeat; /*Le fond ne se répète pas*/
+  background-position:-165px 20px; /*Position de l'image de fond*/
+}
+.windowjaune{ /*Fenêtre modale jaune*/
+  width:1000px; /*Largeur de la fenêtre*/
+  height:550px; /*Longueur de la fenêtre*/
+  position:absolute; /*Position au milieu*/
+  margin-top:50px; /*Espace avec le bord haut du backwindow*/
+  margin-left:50px; /*Espace avec le bord gauche du backwindow*/
+  padding:30px; /*Rembourrage de l'interieur de la fenêtre*/
+  border-radius:30px; /*Coins*/
+  background:rgb(248, 252, 49); /*Couleur du fond*/
+  background-image:url(fond/full-anakin.png); /*Image de fond*/
+  background-size:650px; /*Taille de l'image de fond*/
+  background-repeat:no-repeat; /*Le fond ne se répète pas*/
+  background-position:-100px 55px; /*Position de l'image de fond*/
+}
+.windowviolet{ /*Fenêtre modale violette*/
+  width:1000px; /*Largeur de la fenêtre*/
+  height:550px; /*Longueur de la fenêtre*/
+  position:absolute; /*Position au milieu*/
+  margin-top:50px; /*Espace avec le bord haut du backwindow*/
+  margin-left:405px; /*Espace avec le bord gauche du backwindow*/
+  padding:30px; /*Rembourrage de l'interieur de la fenêtre*/
+  border-radius:30px; /*Coins*/
+  background:rgb(124, 55, 138); /*Couleur du fond*/
+  background-image:url(fond/full-supremacy.png); /*Image de fond*/
+  background-size:1000px; /*Taille de l'image de fond*/
+  background-repeat:no-repeat; /*Le fond ne se répète pas*/
+  background-position:-140px -340px; /*Position de l'image de fond*/
+}
+.windowrouge{ /*Fenêtre modale rouge*/
+  width:1000px; /*Largeur de la fenêtre*/
+  height:550px; /*Longueur de la fenêtre*/
+  position:absolute; /*Position au milieu*/
+  margin-top:50px; /*Espace avec le bord haut du backwindow*/
+  margin-left:50px; /*Espace avec le bord gauche du backwindow*/
+  padding:30px; /*Rembourrage de l'interieur de la fenêtre*/
+  border-radius:30px; /*Coins*/
+  background:rgb(151, 29, 29); /*Couleur du fond*/
+  background-image:url(fond/full-garde.png);
+  background-size:570px; /*Taille de l'image de fond*/
+  background-repeat:no-repeat; /*Le fond ne se répète pas*/
+  background-position:490px 40px; /*Position de l'image de fond*/
+}
+.windoworange{ /*Fenêtre modale orange*/
+  width:1000px; /*Largeur de la fenêtre*/
+  height:550px; /*Longueur de la fenêtre*/
+  position:absolute; /*Position au milieu*/
+  margin-top:50px; /*Espace avec le bord haut du backwindow*/
+  margin-left:405px; /*Espace avec le bord gauche du backwindow*/
+  padding:30px; /*Rembourrage de l'interieur de la fenêtre*/
+  border-radius:30px; /*Coins*/
+  background:rgb(253, 133, 77); /*Couleur du fond*/
+  background-image:url(fond/full-plaiguis.png); /*Image de fond*/
+  background-size:630px; /*Taille de l'image de fond*/
+  background-repeat:no-repeat; /*Le fond ne se répète pas*/
+  background-position:500px -20px; /*Position de l'image de fond*/
+}
+.windowbleu{ /*Fenêtre modale bleue*/
+  width:1000px; /*Largeur de la fenêtre*/
+  height:550px; /*Longueur de la fenêtre*/
+  position:absolute; /*Position au milieu*/
+  margin-top:50px; /*Espace avec le bord haut du backwindow*/
+  margin-left:50px; /*Espace avec le bord gauche du backwindow*/
+  padding:30px; /*Rembourrage de l'interieur de la fenêtre*/
+  border-radius:30px; /*Coins*/
+  background:rgb(72, 99, 255); /*Couleur du fond*/
+  background-image:url(fond/full-robot.png); /*Image de fond*/
+  background-size:550px; /*Taille de l'image de fond*/
+  background-repeat:no-repeat; /*Le fond ne se répète pas*/
+  background-position:-56px 60px; /*Position de l'image de fond*/
+}
+.backwindowform{ /*Arrière de la fenêtre modale*/
+  position:fixed; /*Position fixe*/
+  width:100%; /*Largeur*/
+  height:100%; /*Longueur*/
+  background:rgba(0, 0, 0, 0.815); /*Couleur de fond*/
+  top:0px; /*Espace avec le bord haut de la page*/
+  left:0px; /*Espace avec le bord gauche de la page*/
+  transition:opacity 1s; /*Durée de la transition d'opacité*/
+  pointer-events:none; /*Faire apparaitre backwindow lors du clic*/
+  opacity:0; /*Opacité des fenêtres modales*/
+}
+.windowform{
+  width:200px; /*Largeur de la fenêtre*/
+  height:300px; /*Longueur de la fenêtre*/
+  position:absolute; /*Position au milieu*/
+  margin-top:50px; /*Espace avec le bord haut du backwindow*/
+  margin-left:650px; /*Espace avec le bord gauche du backwindow*/
+  padding:15px; /*Rembourrage de l'interieur de la fenêtre*/
+  border-radius:10px; /*Coins*/
+  background:rgb(167, 167, 167); /*Couleur du fond*/
+}
+.fermer{ /*Icône fermer*/
+  width:40px; /*Largeur de l'icône*/
+  height:40px; /*Longueur de l'icône*/
+  top:25px; /*Espace avec le bord haut de la window*/
+  right:25px; /*Espace avec le bord gauche de la window*/
+  cursor:pointer; /*Pointer lors du survol*/
+  position:absolute; /*Placé en absolu*/
+  transition:0.7s; /*Durée du retrecissement*/
+}
+.fermer:hover{ /*Transformation au survol de l'icône fermer*/
+  transform:scale(0.9); /*Taille grossissement*/
+  transition:0,7s; /*Durée grossissement*/
+}
+.fermerr{ /*Icône fermer*/
+  width:15px; /*Largeur de l'icône*/
+  height:15px; /*Longueur de l'icône*/
+  top:10px; /*Espace avec le bord haut de la window*/
+  right:10px; /*Espace avec le bord gauche de la window*/
+  cursor:pointer; /*Pointer lors du survol*/
+  position:absolute; /*Placé en absolu*/
+  transition:0.7s; /*Durée du retrecissement*/
+}
+.fermerr:hover{ /*Transformation au survol de l'icône fermer*/
+  transform:scale(0.9); /*Taille grossissement*/
+  transition:0.7s; /*Durée grossissement*/
+}
+
+/*-----Phrases-----*/
+
+.etaismarron{ /*Si j'étais fenêtre marron*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  margin-top:10px; /*Espace avec la marge haute*/
+  margin-left:40px; /*Espace avec la marge gauche*/
+}
+.seraismarron{ /*je serais fenêtre marron*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  color: #291818; /*Couleur*/
+  margin-left:20px; /*Espace avec la marge gauche*/
+}
+.explmarron{ /*Explications fenêtre marron*/
+  font-size:25px; /*Taille de la police*/
+  line-height:215%; /*Espace de l'interligne*/
+  margin-left:20px; /*Espace avec la marge gauche*/
+}
+.comblmarron{ /*Comblage fenêtre marron*/
+  color:rgb(83, 59, 59); /*Couleur  */
+  font-size:25px; /*Taille de la police*/
+}
+.etaisvert{ /*Si j'étais fenêtre verte*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  margin-top:10px; /*Espace avec la marge haute*/
+  margin-right:60px; /*Espace avec la marge droite*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.seraisvert{ /*je serais fenêtre verte*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  color: #0f4613; /*Couleur*/
+  margin-right:20px; /*Espace avec la marge droite*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.explvert{ /*Explications fenêtre verte*/
+  font-size:25px; /*Taille de la police*/
+  line-height:215%; /*Espace de l'interligne*/
+  margin-right:20px; /*Espace avec la marge droite*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.comblvert{ /*Comblage fenêtre marron*/
+  color:rgb(57, 168, 94); /*Couleur*/
+  font-size:25px; /*Taille de la police*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.etaisjaune{ /*Si j'étais fenêtre jaune*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  margin-top:10px; /*Espace avec la marge haute*/
+  margin-right:60px; /*Espace avec la marge droite*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.seraisjaune{ /*je serais fenêtre jaune*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  color: #817f00; /*Couleur*/
+  margin-right:20px; /*Espace avec la marge droite*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.expljaune{ /*Explications fenêtre jaune*/
+  font-size:25px; /*Taille de la police*/
+  line-height:215%; /*Espace de l'interligne*/
+  margin-right:20px; /*Espace avec la marge droite*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.combljaune{ /*Comblage fenêtre marron*/
+  color:rgb(248, 252, 49); /*Couleur*/
+  font-size:25px; /*Taille de la police*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.etaisviolet{ /*Si j'étais fenêtre violette*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  margin-top:180px; /*Espace avec la marge haute*/
+  margin-right:60px; /*Espace avec la marge droite*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.seraisviolet{ /*je serais fenêtre violette*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  color: #2b075a; /*Couleur*/
+  margin-top:5px; /*Espace avec la marge haute*/
+  margin-right:20px; /*Espace avec la marge droite*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.explviolet{ /*Explications fenêtre violette*/
+  font-size:25px; /*Taille de la police*/
+  line-height:215%; /*Espace de l'interligne*/
+  margin-right:20px; /*Espace avec la marge droite*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.comblviolet{ /*Comblage fenêtre marron*/
+  color:rgb(124, 55, 138); /*Couleur*/
+  font-size:10px; /*Taille de la police*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.etaisrouge{ /*Si j'étais fenêtre rouge*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  margin-top:10px; /*Espace avec la marge haute*/
+  margin-left:40px; /*Espace avec la marge gauche*/
+}
+.seraisrouge{ /*je serais fenêtre rouge*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  color: #4b0808; /*Couleur*/
+  margin-left:20px; /*Espace avec la marge gauche*/
+}
+.explrouge{ /*Explications fenêtre rouge*/
+  font-size:25px;
+  line-height:215%; /*Espace de l'interligne*/
+  margin-left:20px; /*Espace avec la marge gauche*/
+}
+.comblrouge{ /*Comblage fenêtre marron*/
+  color:rgb(151, 29, 29); /*Couleur*/
+  font-size:25px; /*Taille de la police*/
+  text-align:left; /*Alignement du texte à gauche*/
+}
+.etaisorange{ /*Si j'étais fenêtre orange*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  margin-top:10px; /*Espace avec la marge haute*/
+  margin-left:40px; /*Espace avec la marge gauche*/
+}
+.seraisorange{ /*je serais fenêtre orange*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  color: #6d320b; /*Couleur*/
+  margin-left:20px; /*Espace avec la marge gauche*/
+}
+.explorange{ /*Explications fenêtre orange*/
+  font-size:25px; /*Taille de la police*/
+  line-height:215%; /*Espace de l'interligne*/
+  margin-left:20px; /*Espace avec la marge gauche*/
+}
+.comblorange{ /*Comblage fenêtre marron*/
+  color:rgb(253, 133, 77); /*Couleur*/
+  font-size:25px; /*Taille de la police*/
+  text-align:left; /*Alignement du texte à gauche*/
+}
+.etaisbleu{ /*Si j'étais fenêtre bleue*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  margin-top:10px; /*Espace avec la marge haute*/
+  margin-right:60px; /*Espace avec la marge droite*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.seraisbleu{ /*je serais fenêtre bleue*/
+  font-size:34px; /*Taille de la police*/
+  font-weight:700; /*Taille du gras*/
+  color: #120c6e; /*Couleur*/
+  margin-right:20px; /*Espace avec la marge droite*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.explbleu{ /*Explications fenêtre bleue*/
+  font-size:25px; /*Taille de la police*/
+  line-height:215%; /*Espace de l'interligne*/
+  margin-right:20px; /*Espace avec la marge droite*/
+  text-align:right; /*Alignement du texte à droite*/
+}
+.comblbleu{ /*Comblage fenêtre marron*/
+  color:rgb(72, 99, 255); /*Couleur*/
+  font-size:25px; /*Taille de la police*/
+  text-align:right; /*Alignement du texte à gauche*/
+}
+.ettoi{
+  font-size:20px; /*Taille de la police*/
+  margin-right:20px; /*Espace avec la marge droite*/
+  color:#241aa7; /*Couleur*/
+}
+.jetaisform{
+  font-size:15px; /*Taille de la police*/
+  margin-top:30px; /*Espace avec la marge haute*/
+  margin-right:20px; /*Espace avec la marge droite*/
+  text-align:left;  /*Alignement du texte à droite*/
+}
+.jeseraisform{
+  font-size:15px; /*Taille de la police*/
+  margin-top:30px; /*Espace avec la marge haute*/
+  margin-right:20px; /*Espace avec la marge droite*/
+  text-align:left;  /*Alignement du texte à droite*/
+}
+.parcequeform{
+  font-size:15px; /*Taille de la police*/
+  margin-top:30px; /*Espace avec la marge haute*/
+  margin-right:20px; /*Espace avec la marge droite*/
+  text-align:left;  /*Alignement du texte à droite*/
+}
+.comblform{
+  font-size:8px; /*Taille de la police*/
+  margin-top:30px; /*Espace avec la marge haute*/
+  margin-right:20px; /*Espace avec la marge droite*/
+  text-align:left;  /*Alignement du texte à droite*/
+  color:rgb(167, 167, 167); /*Couleur*/
+}
+
+/*-----Pied de page-----*/
+
+footer{ /*Pied de page*/
+  background-color: rgb(0, 0, 0); /*Couleur du pied de page*/
+  font-size:0.8rem; /*Taille du texte*/
+  position:absolute; /*Placé en absolu*/
+  top:1425px; /*Espace avec le bord haut de la page*/
+  color:white; /*Couleur du texte*/
+  text-align:center; /*Alignement du texte*/
+  height:300px; /*Longueur*/
+  width:100%;/*Largeur*/
+}
+/*Footer déroulant composé de 2 carrés*/
+#deroulfooter, #deroulfooter ul{
+  padding:0; /*Aligne les bords des 2 carrés*/
+  text-align:center; /*Alignement du texte*/
+  line-height:500%; /*Espace de l'interligne*/
+}
+#deroulfooter li{
+  display:inline-block; /*Pour définir longueur et largeur*/
+  position:relative; /*Pour contrôler position*/
+  border-radius:8px 8px 0 0; /*Bords du haut*/
+}
+#deroulfooter ul li{ /*2e carré*/
+  display:inherit; /*Prend la valeur du parent*/
+}
+#deroulfooter ul li:last-child{ /*2e carré*/
+  border-radius:0 0 8px 8px; /*Bords du bas*/
+}
+#deroulfooter ul{ /*2 carrés*/
+  position:absolute; /*Placé en absolu*/
+  max-height:0; /*Masque 2e carré*/
+  left:0; /*Bord gauche aligné au carré 1*/
+  right:0; /*Bord gauche aligné au carré 2*/
+  overflow:hidden; /*Masque 2e carré*/
+  transition: .8s all .3s; /*Durée déroulement*/
+ }
+#deroulfooter li:hover ul{ /*2e carré*/
+  max-height:15em; /*Longueur du 2e carré*/
+}
+#deroulfooter li:first-child{ /*1er carré*/
+  background-color: #000000; /*Couleur du 1er carré*/
+}
+#deroulfooter li:first-child li{ /*2e carré*/
+  background:rgb(32,32,32); /*Couleur du 2e carré*/
+}
+#deroulfooter li:first-child:hover, #deroulfooter li:first-child li:hover{ /*2 carrés*/
+  background:#b93c3c; /*Couleur des 2 carrés au survol*/
+}
+#deroulfooter a{ /*2 carrés*/
+  text-decoration:none; /*Enleve soulignement*/
+  display:block; /*Pour appliquer des comportements*/
+  padding:8px 200px; /*Rembourrage de l'intérieur des 2 carrés*/
+  color:#fff; /*Couleur texte du 1er carré*/
+}
+#deroulfooter ul a{ /*2e carré*/
+  padding:15px;/*Longueur du 2e carré*/
+}
+#deroulfooter li:hover li a{ /*2e carré*/
+  color:rgb(255, 255, 255); /*Couleur texte du 2e carré*/
+}
+#deroulfooter li:hover a, #deroulfooter li li:hover a{ /*2 carrés*/
+  color:rgb(32, 32, 32); /*Couleur texte au survol*/
+}
+.formulaire{ /*Formulaire*/
+  position: absolute; /*Placé en absolu*/
+  font-size:10px; /*Taille du texte*/
+  cursor:pointer; /*Pointer lors du survol*/
+  top:250px; /*Espace avec le bord haut du footer*/
+  right:40px; /*Espace avec le bord droit du footer*/
+  transition:0.5s; /*Durée du retrecissement*/
+}
+.formulaire:hover{ /*Transformation au survol du formulaire*/
+  transform: scale(0.9); /*Taille du grossissement*/
+  transition:0.5s; /*Durée du grossissement*/
+}
