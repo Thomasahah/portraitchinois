@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!--Language html-->
+<html lang="fr"> <!--Début html, language fr-->
+
+<head> <!--Début tête-->
+    <meta charset="UTF-8"> <!--Codage des caractères-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Comptabilité avec internet-->
+    <title>Portrait Chinois Thomas</title> <!--Titre de l'onglet-->
+    <link rel="stylesheet" href="style.css"> <!--Déclare feuille de style, lien avec css-->
+    <link rel="icon" type="image/png" sizes="16x16" href="fond/full-robot.png"> <!--Logo de la fenêtre-->
+</head> <!--Fin tête-->
+
+<body> <!--Début corps-->
+    <script src="data.js"></script> <!--Lien avec js-->
+    <script src="script.js"></script> <!--Lien avec js-->
+    
+    <style> /*Lien avec css*/
+        @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap'); /*Importation police*/
+    </style>
+
+    <img src="images/portrait chinois.png" class="portraitchinois"> <!--Titre en jaune-->
+    <img src="images/fleche.png" class="fleche"> <!--Flèche-->
+    
+    <div class="boximg"> <!--Box qui regroupe les icônes-->
+        <img src="icones/icone-marron.png" alt="" class="marron icône button" onclick='showModal1("modal1","scale")'> <!--Icone 1, classes associées, effet du clic : ouvre modale-->
+        <img src="icones/icone-vert.png" alt="" class="vert icône button" onclick='showModal2("modal2","scale")'> <!--Icone 2, classes associées, effet du clic : ouvre modale-->
+        <img src="icones/icone-jaune.png" alt="" class="jaune icône button" onclick='showModal3("modal3","scale")'> <!--Icone 3, classes associées, effet du clic : ouvre modale-->
+        <img src="icones/icone-violet.png" alt="" class="violet icône" onclick='showModal4("modal4","scale")'> <!--Icone 4, classes associées, effet du clic : ouvre modale-->
+        <img src="icones/icone-rouge.png" alt="" class="rouge icône" onclick='showModal5("modal5","scale")'> <!--Icone 5, classes associées, effet du clic : ouvre modale-->
+        <img src="icones/icone-orange.png" alt="" class="orange icône" onclick='showModal6("modal6","scale")'> <!--Icone 6, classes associées, effet du clic : ouvre modale-->
+        <img src="icones/icone-bleu.png" alt="" class="bleu icône" onclick='showModal7("modal7")'> <!--Icone 7, classes associées, effet du clic : ouvre modale-->
+    </div>
+
+    <div class='backwindow' id='modal1'> <!--Déclaration de l'arrière de la modale avec cette dernière-->
+        <div class='windowmarron'> <!--Déclaration fenêtre modale marron-->
+            <img src="images/croix.png" class="fermer" onclick='closeModal1("modal1")'> <!--Icone 1, classe associée, effet du clic : ferme modale-->
+        </div>
+    </div>
+
+    <div class='backwindow' id='modal2'> <!--Déclaration de l'arrière de la modale avec cette dernière-->
+        <div class='windowvert'> <!--Déclaration fenêtre modale verte-->
+            <img src="images/croix.png" class="fermer" onclick='closeModal2("modal2")'> <!--Icone 2, classe associée, effet du clic : ferme modale-->
+        </div>
+    </div>
+
+    <div class='backwindow' id='modal3'> <!--Déclaration de l'arrière de la modale avec cette dernière-->
+        <div class='windowjaune'> <!--Déclaration fenêtre modale jaune-->
+            <img src="images/croix.png" class="fermer" onclick='closeModal3("modal3")'> <!--Icone 3, classe associée, effet du clic : ferme modale-->
+        </div>
+    </div>
+
+    <div class='backwindow' id='modal4'> <!--Déclaration de l'arrière de la modale avec cette dernière-->
+        <div class='windowviolet'> <!--Déclaration fenêtre modale violette-->
+            <img src="images/croix.png" class="fermer" onclick='closeModal4("modal4")'> <!--Icone 4, classe associée, effet du clic : ferme modale-->
+        </div>
+    </div>
+
+    <div class='backwindow' id='modal5'> <!--Déclaration de l'arrière de la modale avec cette dernière-->
+        <div class='windowrouge'> <!--Déclaration fenêtre modale rouge-->
+            <img src="images/croix.png" class="fermer" onclick='closeModal5("modal5")'> <!--Icone 5, classe associée, effet du clic : ferme modale-->
+        </div>
+    </div>
+    <div class='backwindow' id='modal6'> <!--Déclaration de l'arrière de la modale avec cette dernière-->
+        <div class='windoworange'> <!--Déclaration fenêtre modale orange-->
+            <img src="images/croix.png" class="fermer" onclick='closeModal6("modal6")'> <!--Icone 6, classe associée, effet du clic : ferme modale-->
+        </div>
+    </div>
+
+    <div class='backwindow' id='modal7'> <!--Déclaration de l'arrière de la modale avec cette dernière-->
+        <div class='windowbleu'> <!--Déclaration fenêtre modale bleue-->
+            <img src="images/croix.png" class="fermer" onclick='closeModal7("modal7")'> <!--Icone 7, classe associée, effet du clic : ferme modale-->
+        </div>
+    </div>
+
+    <!--formulaire-->
+    <div class='backwindowform' id='modal8'>
+        <div class='windowform'>
+            <img src="images/croix.png" class="fermerr" onclick='closeModal8("modal8")'>
+        </div>
+    </div>
+
+    <footer> <!--Pied de page-->
+        <ul id="deroulfooter"> <!--Déclaration du footer déroulant-->
+            <li><a href="#">Crédits</a> <!--1er contenu de footer déroulant-->
+                <ul> <!--Liste-->
+                    <li><a href="#">Dans le cadre de la SAE 104<br>© Thomas Devred - © Google fonts</a></li> <!--2e contenu de footer déroulant-->
+                </ul>
+            </li>
+        </ul>
+        <p1 class="formulaire">Formulaire</p1>
+    </footer>
+</body> <!--Fin corps-->
+</html> <!--Début html, language fr-->
